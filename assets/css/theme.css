@@ -1,0 +1,32 @@
+:root {
+ --light-bg: '#FAFAFB';
+ --light-bg-alt: '#FFFFFF';
+ --light-primary: '#7857ED';
+ --light-text: '#1C1D1F';
+ --light-secondary: '#37434B';
+ --dark-bg: '#141516';
+ --dark-bg-alt: '#232427';
+ --dark-primary: '#BBED55';
+ --dark-text: '#FFFFFF';
+ --dark-secondary: '#6F7479';
+}
+
+.body-light { background: var(--light-bg); }
+.body-dark { background-color: var(--dark-bg); }
+
+.bg-light { background-color: var(--light-bg-alt); }
+.bg-dark { background-color: var(--dark-bg-alt); }
+
+.text-light { color: var(--light-text); }
+
+.text-dark { color: var(--dark-text); }
+
+.navbar-dark { background-color: var(--dark-bg); }
+
+.navbar-light { background-color: var(--light-bg); }
+
+.btn-primary { background-color: var(--light-primary); }
+
+.btn-secondary { background-color: var(--light-secondary); }
+
+

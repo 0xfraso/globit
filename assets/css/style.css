@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: hover .5s ease;
+}
+
+#logo {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+}
+.dropdown-menu {
+  min-width: 300px;
+}
+
+.body-dark { background-color: #141516; }
+.body-light { background-color: #FAFAFB; }
+.bg-light { background-color: #FFFFFF !important }
+.bg-dark { background-color: #232427 !important }
+.navbar-dark { background-color: #232427 !important }
+.navbar-light { background-color: #FFFFFF !important }
+.btn { color: white !important; border: none !important; border-radius: 0.75rem !important }
+.text-primary { color: rgba(120, 87, 237, 1) !important }
+.text-secondary { color: rgba(187, 237, 85, 1) !important }
+.bg-primary { background-color: rgba(120, 87, 237, 1) !important }
+.bg-secondary { background-color: rgba(187, 237, 85, 1) !important }
+.btn-primary { background-color: rgba(120, 87, 237, 1) !important }
+.btn-secondary { background-color: rgba(187, 237, 85, 1) !important; color: #141516 !important; }
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important; 
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+a { text-decoration: none; color: inherit; }
+a:link { text-decoration: none }
+a:visited { color: inherit }
+a:hover {
+  color: inherit;
+  opacity: 0.9;
+}
+
+main {
+  height: 100%;
+}
+
+.header {
+  height: 35vh;
+}
+
+.rounded {
+  border-radius: 0.75rem !important;
+}
+
+.notifications-count {
+    margin-left: -15px;
+}
+
+.hover:hover {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.75rem;
+}
+.hover a:hover {
+  color: inherit;
+}
+
+.avatar {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 3rem;
+  height: 3rem;
+}
+
+aside {
+  top: 80px;
+  position: sticky;
+}
+
+.profile-picture {
+  border-radius: 0.75rem;
+}
+
+#checkbox-theme-switch {
+  display: none;
+	opacity: 0;
+	position: absolute;
+}
+
+.action-button {
+  width: 2rem;
+  height: 2rem;
+}
+.action-button:hover {
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.post-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.show {
+  display: block;
+}
+
+.preview-picture {
+    cursor: pointer;
+}
+
+.collapse-comment {
+  width: 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.collapse-comment:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.action-form label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    width: auto;
+}
+.action-form label span {
+    text-align: center;
+    display: block;
+}
+.action-form label input {
+    position: absolute;
+    opacity: 0;
+}
+.action-form input + svg {
+    min-width: 32px;
+}
+.action-form label:hover {
+    cursor: pointer;
+}
+
+.vote-form input:checked + svg {
+    stroke: #ec4899;
+}
+.vote-form input:hover + svg {
+    stroke: #ba3f71;
+}
+.comment-form input:hover + svg {
+    stroke: #325fa8;
+}
+.share-form input:hover + svg {
+    stroke: #6447a8;
+}
