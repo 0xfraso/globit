@@ -31,3 +31,15 @@ Creazione di un post:
 - Inserimento di testo e foto
 - Video embedded da link di Youtube
 - Inserire dei tag (con il simbolo #) all'interno post
+
+## Utenti dummy
+
+email 
+
+- francesco.raso@studio.unibo.it 
+- cutrux@neo.it 
+- meemmo@bivona.it 
+
+password:
+
+globit
