@@ -26,7 +26,7 @@ class DatabaseHelper
         "INSERT_COMMENT" => ["INSERT INTO comments (post_id, user_id, body, created_at, parent_id, post_owner_id) VALUES (?, ?, ?, NOW(), ?, ?)", "iisii"],
         "SELECT_ALL_POSTS" => ["SELECT p.* FROM posts p ORDER BY p.created_at DESC", ""],
         "SELECT_USER_POSTS" => ["SELECT p.* FROM posts p  WHERE p.user_id = ? ORDER BY created_at DESC", "i"],
-        "SELECT_USER_FEED" => ["SELECT DISTINCT posts.* FROM posts JOIN users ON posts.user_id = users.id JOIN follows ON users.id = follows.followed_id WHERE follows.follower_id = ? OR posts.user_id = ? ORDER BY posts.created_at DESC", "ii"],
+        "SELECT_USER_FEED" => ["SELECT DISTINCT posts.* FROM posts JOIN users ON posts.user_id = users.id LEFT JOIN follows ON users.id = follows.followed_id WHERE posts.user_id = ? OR (follows.follower_id = ? AND follows.followed_id = posts.user_id) ORDER BY posts.created_at DESC;", "ii"],
         "CHECK_POST_VOTE" => ["SElECT COUNT(*) FROM post_votes WHERE post_id = ? AND user_id = ?", "ii"],
         "CHECK_COMMENT_VOTE" => ["SElECT COUNT(*) FROM comment_votes WHERE comment_id = ? AND user_id = ?", "ii"],
         "UNVOTE_POST" => ["DELETE FROM post_votes WHERE user_id = ? AND post_id = ?", "ii"],
