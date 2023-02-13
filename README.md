@@ -34,6 +34,10 @@ Creazione di un post:
 
 ## Utenti dummy
 
+La query di creazione del database si trova nel file `database-structure.sql`
+
+Di default il database è nominato `social`
+
 email 
 
 - francesco.raso@studio.unibo.it 
